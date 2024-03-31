@@ -33,18 +33,44 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
-
-Developed by: RegisterNumber:*/
+ Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+```
+Developed by: SRINIDH ISENTHIL
+RegisterNumber: 212222230148
+module Boolean_min(A,B,C,D,W,X,Y,Z,F1,F2);
+input A,B,C,D,W,X,Y,Z;
+wire x1,x2,x3,x4,x5,x6,x7,x8,x9,x10;
+output F1,F2;
+assign x1=(~A)&(~B)&(~C)&(~D);
+assign x2=(A)&(~C)&(~D);
+assign x3=(~B)&(C)&(~D);
+assign x4=(~A)&(B)&(C)&(D);
+assign x5=(B)&(~C)&(D);
+assign x6=(X)&(~Y)&(Z);
+assign x7=(~X)&(~Y)&(Z);
+assign x8=(~W)&(X)&(Y);
+assign x9=(W)&(~X)&(Y);
+assign x10=(W)&(X)&(Y);
+assign F1=x1|x2|x3|x4|x5;
+assign F2=x6|x7|x8|x9|x10;
+endmodule
+```
 
 
 **RTL realization**
+![image](https://github.com/SRINIDHISENTHILNATHAN/BOOLEAN_FUNCTION_MINIMIZATIONEXP2/assets/121373170/eb4b6bf1-a966-4d51-aae4-ac3af938b15b)
 
 **Output:**
+### TRUTH TABLE
+![image](https://github.com/SRINIDHISENTHILNATHAN/BOOLEAN_FUNCTION_MINIMIZATIONEXP2/assets/121373170/e049d198-ec95-4106-b06d-ff3ca1362ee4)
+
+![image](https://github.com/SRINIDHISENTHILNATHAN/BOOLEAN_FUNCTION_MINIMIZATIONEXP2/assets/121373170/10008878-cacb-4344-8165-2fa80f6313b9)
 
 **RTL**
 
+
 **Timing Diagram**
+![image](https://github.com/SRINIDHISENTHILNATHAN/BOOLEAN_FUNCTION_MINIMIZATIONEXP2/assets/121373170/56dd1345-bb62-4c06-8d49-d86b04475b70)
 
 **Result:**
 
